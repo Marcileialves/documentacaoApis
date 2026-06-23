@@ -70,7 +70,7 @@ export default function Home() {
         response: {
           mensagem: 'Token de recuperação gerado com sucesso!',
           token_recuperacao: 'eyJhbGciOiJIUzI1NiIs...',
-          link_recuperacao: 'http://localhost:3000/resetar-senha.html?token=...'
+          link_recuperacao: 'http://apipescfish.dev.vilhena.ifro.edu.br/resetar-senha.html?token=...'
         }
       },
       { 
@@ -1313,7 +1313,7 @@ export default function Home() {
   );
 
   const copyToClipboard = (text) => {
-    navigator.clipboard.writeText(`http://localhost:3000${text}`);
+    navigator.clipboard.writeText(`http://apipescfish.dev.vilhena.ifro.edu.br${text}`);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -1354,7 +1354,7 @@ export default function Home() {
         <section className={styles.hero}>
           <h2>📚 Documentação Completa da API</h2>
           <p className={styles.heroSubtitle}>
-            Servidor: <code className={styles.code}>http://localhost:3000</code>
+            Servidor: <code className={styles.code}>http://apipescfish.dev.vilhena.ifro.edu.br</code>
           </p>
           <div className={styles.heroBadges}>
             <span className={styles.heroBadge}>🔐 Autenticação JWT</span>
